@@ -1,0 +1,330 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+         
+            a {
+                /* padding: 12px 130px; */
+                text-decoration: none;
+                flex: 1;
+                text-align: center;
+                color: white;
+                font-family: Inconsolata, sans-serif;
+                font-size: 17px;
+                max-width: 330px;
+                line-height: 40px;
+            }
+
+            .nav-bar{
+                position: fixed;
+                background-color: black;
+                flex-flow: row;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 58px;
+                width: 100%;
+            }
+            a:hover {
+                background-color: silver;
+                color: black;
+            }
+            .bgimg{
+                background-position: center;
+                background-size: cover;
+                background-image: url(coffeehouse.jpg);
+                height: 75%;
+                width: 100%;
+            } 
+            
+             
+            .grayscale {
+                filter: grayscale(50%);
+            }
+            
+            header div#header-content label#label1 {
+                color: white;
+                background-color: black;
+                font-family: Inconsolata, sans-serif;
+                font-size: 17px;
+                text-align: center;
+            }
+
+            header div#header-content label#label2 {
+                color: white;
+                font-family: Inconsolata, sans-serif;
+                font-size: 100px;
+              
+            }
+            header div#header-content label#label3 {
+                color: white;
+                font-family: Inconsolata, sans-serif;
+                font-size: 17px;
+            }
+
+            #header-content {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+            .content1 {
+               
+                position: absolute;
+                bottom: 14px;
+                left: 25px;
+                background-color: black;
+                padding: 3px 8px;
+            }
+            .content3 {
+                position: absolute;
+                bottom: 25px;
+                right: 45px;  
+            }
+            .content2 {
+                text-align: center;  
+                
+                margin: 15% auto;
+            }
+            h2#about-h2 {
+                font-size: 19px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: white;
+                letter-spacing: 2px;
+                width: 220px;
+                background-color: black;
+                display: block;
+                margin: 90px auto;
+                padding: 3px 10px;
+            }
+            h2#menu-h2 {
+                font-size: 19px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: white;
+                letter-spacing: 2px;
+                width: 130px;
+                background-color: black;
+                display: block;
+                margin: 80px auto;
+                padding: 3px 5px;
+            }
+            
+            #overall-content {
+                background-color:whitesmoke;
+            }
+            p#p1 {
+                font-size: 19px;
+                font-family: Inconsolata, sans-serif;
+                line-height: 28px;
+                margin: 20px auto;
+            }
+            .eat-drink-heading {
+                box-shadow: 1px 0px 6px #888888;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px auto;
+                width: 100%;
+                height: 40px;
+            }
+
+            #div-content-about {
+                width: 56%;
+                margin: 5px auto;
+            }
+            #div-content-menu {
+                width: 56%;
+                margin: 10px auto;
+            }
+            #div-content-where{
+                width: 56%;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .food {
+                color: black;
+                display:flex; 
+                justify-content: center; 
+                align-items: center; 
+                height: 30px; 
+                font-size: 19px;
+            }
+            .food:hover {
+                color: white;
+                background-color:dimgray;
+            }
+            .eat-drink-content-card {
+                box-shadow: 1px 0px 6px #888888;
+                margin: -20px auto;
+                width: 100%;
+                height: auto;
+            }
+            #eat-content{
+                margin: 0px 30px;
+            }
+            #eat h5 {
+                color:black;
+                font-size: 18px;
+                padding-top:50px;
+                padding-bottom: 25px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #eat p {
+                font-family: Inconsolata, sans-serif;
+                color:grey;
+                font-size: 18px;
+                
+            }
+            h2#where-h2 {
+                font-size: 19px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: white;
+                letter-spacing: 2px;
+                width: 230px;
+                background-color: black;
+                display: block;
+                margin: 80px auto;
+                padding: 3px 5px;
+            }
+            input {
+                font-family: Inconsolata, sans-serif;
+                border: 1px solid silver;
+                height: 70px;
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 15px;
+                font-size:20px;
+            }
+            button {
+                color: white;
+                background-color: black;
+                height: 50px;
+                font-family: Inconsolata, sans-serif;
+                width: 150px;
+                font-size: 18px;
+                border: 1px solid black;
+            }
+            footer {
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(226, 224, 224);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header class="bgimg grayscale"> 
+            <div class="nav-bar">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">MENU</a>
+                <a href="#">WHERE</a>
+            </div>
+            
+           <div id="header-content">
+                <div class="content1">
+                    <label id="label1">Open from 6am to 5pm</label>
+                </div>
+                <div class="content2">
+                     <label id="label2"> the </br>Cafe</label>
+                </div>
+                <div class="content3">
+                     <label id="label3">15 Adr street, 5015</label>
+                </div>
+            </div>
+        </header>
+        
+        <div id="overall-content">
+            <div id="div-content-about">
+                <div id="about">
+                    <h2 id="about-h2">ABOUT THE CAFE</h2>
+                    <p id="p1">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p id="p1">In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+                    <div style="background-color: #ececec;">
+                        <p id="p1">
+                            <i>
+                                "Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.
+                            </i>
+                        </p>
+                        <p id="p1">Chef, Coffeeist and Owner: Liam Brown</p>
+                    </div>
+                    <img class="grayscale" src="coffeeshop.jpg" style="width:100%; margin-top: 15px;">
+                    <p id="p1"><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+                    <p id="p1"><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+                </div>
+            </div>
+            
+
+            <div id="menu">
+                <div id="div-content-menu">
+                    <h2 id="menu-h2">THE MENU</h2>
+                    <div class="eat-drink-heading">
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" >
+                          <div class="food">Eat</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                          <div class="food">Drink</div>
+                        </a>
+                    </div>
+
+                    <div id="eat" class="eat-drink-content-card">
+                        <div id="eat-content">
+                            <h5>Bread Basket</h5>
+                            <p>Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+                          
+                            <h5>Honey Almond Granola with Fruits</h5>
+                            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+                          
+                            <h5>Belgian Waffle</h5>
+                            <p>Vanilla flavored batter with malted flour 7.50</p><br>
+                          
+                            <h5>Scrambled eggs</h5>
+                            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+                          
+                            <h5>Blueberry Pancakes</h5>
+                            <p>With syrup, butter and lots of berries 8.50</p>
+                        </div>
+                    </div>
+                    <img class="grayscale" src="coffeehouse2.jpg" style="width:100%; margin-top:50px;">
+                </div>
+            </div>
+
+            <div id="where">
+                <div id="div-content-where">
+                    <h2 id="where-h2">WHERE TO FIND US</h2>
+                    <p id="P1">Find us at some address at some place.</p>
+                    <img src="map.jpg" style="width:100%">
+                    <p id="p1">
+                        <span style="color: white; font-family: Inconsolata, sans-serif; background-color: black;  padding: 3px 7px; margin-top: 10px;  width: 45px;">FYI!</span>
+                        "We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste."
+                    </p>
+                    <p id="p1"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+
+                    <form>
+                        <p><input  type="text" placeholder="Name" required name="Name"></p>
+                        <p><input  type="number" placeholder="How many people" required name="People"></p>
+                        <p><input  type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+                        <p><input  type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                        <p><button  type="submit">SEND MESSAGE</button></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p  style=" font-size: 20px;
+                    font-family: Inconsolata, sans-serif; 
+                     text-align: center;">
+                    Powered by <a style="color: black" href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS">w3.css</a></p>
+        </footer>
+    </body>
+</html>
